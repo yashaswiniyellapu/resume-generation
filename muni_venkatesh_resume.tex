@@ -1,0 +1,285 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Muni Venkatesh Ganji} \\ \vspace{1pt}
+    Ricarda-Huch-Strasse 9, Erlangen, 91056 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +49 15207091018 ~ \href{mailto:g.m.venkateshmuni@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{g.m.venkateshmuni@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/muni-venkatesh-ganji/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/munivenkateshganji}}  ~
+    \href{https://github.com/wenkey-gm}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/wenkey-gm}}
+    \vspace{-8pt}
+\end{center}
+
+%------ABOUT----------
+\section{About}
+    \resumeSubHeadingListStart
+        \resumeItem{Enthusiastic and driven student seeking a working student role in Signal Processing and  Wireless Communications, equipped with strong technical skills and a passion for networking and connectivity. Eager to gain hands-on experience in designing and implementing advanced signal processing and communication solutions while supporting an innovative organization. Aspiring to apply academic knowledge in a practical setting, collaborate with experienced professionals, and enhance skills in signal processing, mobile communications, Communication Systems, network design, firmware and protocol development. Looking for an opportunity to contribute to groundbreaking projects, expand my technical expertise, and make a meaningful impact in Signal Processing and Digital Communications.}
+    \resumeSubHeadingListEnd
+    \vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {FAU Erlangen-Nuremburg}{April 2024 -- current}
+      {Master of Science in Information and Communication Technology}{Erlangen, Bayern, Germany}
+      \resumeSubheading
+      {JNTUA College of Engineering, Pulivendula}{July 2017 -- June 2021}
+      {Bachelor of Technology in Electronics and Communication Engineering}{Pulivendula, Andhra Pradesh, India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Areas of Interest}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Mobile Communications.
+                \item Wireless Communication Systems.
+                \item Machine Learning.
+                \item Mobile Applications Development.
+                \item Low Code Development.
+                \item Multi-Core CPU/GPU.
+                \item Cloud Computing.
+                \item 3GPP.
+                \item DevOps and CI/CD Integration.
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Everest Engineering}{August 2021 -- March 2024}
+      {Software Craftsperson}{Bangalore, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+        \resumeItem{Proficient in utilizing software solutions to effectively address various challenges as a full-stack developer.}
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Designed and developed starter kits leveraging React-Native and Flutter frameworks.}
+        \resumeItem{Engage with stakeholders to gather and analyze requirements collaboratively.}
+        \resumeItem{Mentored and trained junior engineers, helping them to develop their skills and advance their careers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Climate Smart Technologies}{April 2020 -- August 2020}
+      {Full Stack Developer Intern}{Remote, India}
+      \resumeItemListStart
+        \resumeItem{ Served as a team leader overseeing the development of Android and Responsive web DRM applications.}
+        \resumeItem{Acquired knowledge of technologies like Java, Native-Android development, MySQL, PHP, and Firebase.}
+        \resumeItem{Proficiently utilized advanced tools such as Android Studio, Visual Studio Code, and Vysor for rapid application development.}
+        \resumeItem{Enhanced my communication skills through these experiences.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Simulation and Analysis of Spectrum Sensing in Cognitive Radio} $|$ \emph{Matlab, Simulink, Git}}{April 2021 -- June 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a solution to enhance Cognitive Radio with Wireless Communication to optimize bandwidth utilization, adhering to the IEEE 802.22 standard for rural broadband connectivity by identifying and using vacant DTV spectrum bands.}
+            \resumeItem{Explored various spectrum sensing algorithms, focusing on energy detection due to its ease of implementation without requiring prior information about primary users. Identified limitations of conventional energy detectors in low SNR regions.}
+            \resumeItem{Introduced a double threshold CSS method to enhance decision reliability. This method involved CRs sending local decisions or observed energy to a fusion center, which then made final decisions by combining these inputs.}
+            \resumeItem{Conducted extensive simulations using MATLAB to evaluate spectrum sensing performance. Simulated various scenarios for both single unit (local sensing) and multiple secondary users (collaborative sensing) to meet IEEE 802.22 standard requirements.}
+            \resumeItem{Analyzed detection performance through simulations, demonstrating the effectiveness of the proposed spectrum sensing techniques and their potential to improve wireless rural broadband connectivity by effectively utilizing underused spectrum bands.}
+            \resumeItem{Published a research paper based on the findings and methodologies of showcasing the effectiveness of the proposed spectrum sensing techniques.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{DRM App for COVID-19 Management} $|$ \emph{Java, Android Studio}}{April 2020 -- August 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Disaster Risk Management (DRM) app named “covid19-state name” for each state and union territory in response to the COVID-19 pandemic, providing emergency helpline management and a variety of support features.}
+            \resumeItem{Implemented a COVID-19 tracker specific to each state, allowing users to monitor local infection rates and trends.}
+            \resumeItem{Integrated geofencing technology to map and manage containment zones, aiding in the control and prevention of virus spread within designated areas.}
+            \resumeItem{Developed a self-quarantine system with notification alerts that reminded users to comply with quarantine measures for up to 14 days.}
+            \resumeItem{Included a transportation pass system, helpline toll-free numbers, live updates from Google News, and COVID-19 vaccine updates from Twitter to provide comprehensive information and support to users.}
+          \resumeItemListEnd 
+         
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, Kotlin, Dart, C, HTML/CSS, JavaScript, TypeScript, SQL, VHDL} \\
+     \textbf{Tools}{: Matlab, R Language (RStudio), Omnet++, Xilinx Vivado, Microsoft Office} \\
+     \textbf{Image Processing Libraries}{: OpenCV, NumPy, Pandas} \\
+     \textbf{Developer Tools}{: VS Code, Intellij, Google Cloud Platform, Firebase, Amazon Web Services, Jupyter, Android Studio} \\
+     \textbf{DevOps tools}{: Docker, CI/CD, GitHub, GitLab, BitBucket} \\
+     \textbf{Operating Systems}{: Mac, Windows, Linux, Android} \\
+     \textbf{Technologies/Frameworks}{: Flutter, React, Spring-boot, Node.js, Elastic Search, Expo, React-Native, Linux, Stripe Payment Gateway Integration, Espresso, JUnit} \\
+     \textbf{Soft Skills}{: Time Management, Leadership, Adaptability and Flexibility, Decision Making} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\section{Certifications}
+    \resumeItemListStart
+        \resumeItem{Possesses both Stripe Professional and Stripe Associate certifications, showcasing proficiency in payment integration solutions.}
+        \resumeItem{Obtained certification for partipation in an Internet of Things workshop by APSSDC organisation at JNTUACEP.}
+        \resumeItem{Nptel Online certification on completion of Data Analytics course at JNTUACEP.}
+        \resumeItem{Attained certification for partipation of Robogyan workshop organized by Robokart.com at JNTUACEP.}
+    \resumeItemListEnd 
+    \vspace{-16pt}
+
+
+ \section{Language Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Mother Tongue}{: Telugu} \\
+     \textbf{Other Languages}{: English - C1, German - A1, Hindi - B1} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{COVID-19 Hackathon}{August 2020}{Team Leader}{JNTUA College of Engineering, Pulivendula}
+            \resumeItemListStart
+                \resumeItem{Top 50 in National Level Covid-19 Hackathon by Anna University under AICTE.}
+                \resumeItem{Developed individual real-time Applications for 26 states and 7 U.T in India.}
+            \resumeItemListEnd
+        \resumeSubheading{Brain-o-vision Hackathon}{June 2019}{Designer}{JNTUA College of Engineering, Pulivendula}
+            \resumeItemListStart
+                \resumeItem{Won 30Hrs HACKATHON on Web Development by Brain-O-Vision Organisation.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}

@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape Yashaswini Yellapu} \\ \vspace{1pt}
+  Konigsberger Strasse 33, Furth, 90766 \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +49 15221348983 ~ \href{mailto:yashaswiniyellapu@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yashaswiniyellapu@gmail.com}} ~
+  \href{https://www.linkedin.com/in/yashaswini-y-200500149/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/yashaswini}}  ~
+  \href{https://github.com/yashaswiniyellapu}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/yashaswiniyellapu}}
+  \vspace{-8pt}
+\end{center}
+
+%------ABOUT----------
+\section{About}
+\resumeSubHeadingListStart
+\resumeItem{I am seeking a Working Student position, aligning with my master's studies in FAU. This role offers hands
+  on industry experience to expand my skills. Dedicated and adaptable, I strive to contribute effectively to
+  dynamic team environments. Balancing academic excellence with professional growth, I aim to make
+  meaningful contributions and drive innovation within the organization.!}
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{FAU Erlangen-Nuremburg}{April 2024 -- current}
+{Master of Science in Autonomy Technologies}{Erlangen, Bayern, Germany}
+\resumeSubheading
+{JNTUA College of Engineering, Pulivendula}{July 2017 -- June 2021}
+{Bachelor of Technology in Mechanical Engineering}{Pulivendula, Andhra Pradesh, India}
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Areas of Interest}
+%\resumeSubHeadingListStart
+\begin{multicols}{3}
+  \begin{itemize}[itemsep=-5pt, parsep=3pt]
+    \item\small Robotics.
+    \item Autonomous Driving.
+    \item Computer Vision.
+    \item Low Code Development.
+    \item DevOps and CI/CD Integration.
+  \end{itemize}
+\end{multicols}
+\vspace*{2.0\multicolsep}
+%\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Everest Engineering}{August 2021 -- March 2024}
+{Software Craftsperson}{Bangalore, Karnataka}
+
+\textbf{Timesheets | Employee Work Hours Tracking} {July 2023 – Jan 2024 }
+
+
+\textbf{Tech Stack:} \textit{ TypeScript, SQL, Node.js, React-JS}
+
+\resumeItemListStart
+\resumeItem{Implemented constraints in recording work hours.}
+\resumeItem{Enhanced CI/CD processes for scheduled script execution using GitHub Actions.}
+\resumeItem{Developed new features in an admin-friendly user interface.}
+\resumeItem{Increased test coverage through unit tests. }
+\resumeItem{Utilized AWS ECS to manage databases. }
+\resumeItemListEnd
+
+\textbf{SeekMaxConnect | Job Portal Mobile Application} {Aug 2022 - June 2023}
+
+\textbf{Tech Stack:} \textit{Node.js, TypeScript, JavaScript, Koa.js, NodeBB, Docker, Buildkite, AWS, MongoDB,
+  Jest, Nock, Datadog, Splunk, PagerDuty}
+\resumeItemListStart
+\resumeItem{Managed on-call support, effectively resolving production incidents through collaborative teamwork.}
+\resumeItem{Championed the delivery of the MyThread feature, ensuring its successful implementation within the application}
+\resumeItem{Developed monitoring dashboards in Datadog for API and AWS services, proficiency in Splunk. }
+\resumeItem{Enhanced NodeBB service functionalities with user-specific privileges and custom API integrations.}
+\resumeItem{Implemented multiple APIs across proxy and GraphQL service layers, incorporating AWS Recognition, Lambda, CloudFormation, and SecretManager services.}
+\resumeItem{Utilized AWS EC2, SNS, and CloudWatch services, while building Docker images and establishing CI/CD pipelines using Buildkite.}
+\resumeItem{Improved test coverage through the implementation of unit and integration tests.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Everest Engineering}{April 2021 -- August 2022}
+{Full Stack Developer Intern}{Bangalore, India}
+
+\textbf{Employee Portal | Web Application}
+
+\textbf{Tech stack:} \textit{Java, SQL, Spring boot}
+\resumeItemListStart
+\resumeItem{ Developed a Java-backed application with a React JS frontend, incorporating CI/CD via GitHub Actions, and deployed it using AWS ECS cloud services. Acquired expertise in building and testing REST APIs. }
+\resumeItemListEnd
+
+\textbf{Airlines booking system | Backend Application}
+
+\textbf{Tech stack:} \textit{Java, Docker, MySQL, Aws, React}
+
+\resumeItemListStart
+\resumeItem{Has built a Java-based backend application to book flight tickets based on Economy, First and Second class with pricing strategies that depend on the date of booking. It was able to handle the flight data using the MySQL database. }
+\resumeItemListEnd
+
+\textbf{Parking lot System | Backend Application}
+
+\textbf{Tech stack:} \textit{Java}
+\resumeItemListStart
+\resumeItem{Has built a Java-based application to create a parking lot with given floors and slots by the user. It is used to allocate the parking space for cars, bikes and trucks. Parking-ticket is issued when the vehicle was parked and a vehicle with a parking ticket can be brought out of
+  the parking lot.  }
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%----!!!!YASHU FILL THIS--------
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Automatic Domestic Fire Suppression System} $|$ \emph{Aurduino,Flame sensor,GSM module,Relay module}}
+{April 2021-June 2021}
+\resumeItemListStart
+\resumeItem{The project represents a comprehensive safety initiative
+  designed to elevate the security of domestic households. It leverages cutting-edge technology to detect,
+  mitigate, and prevent fire accidents within the confines of a house, ensuring a safer living experience.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Smart Dustbin} $|$ \emph{Aurduino, Servo motor, Ultrasonic sensor}}{April 2020 -- August 2020}
+\resumeItemListStart
+\resumeItem{To improve hygiene, this setup enables to dispose of trash without touching the dustbin lid.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Python, Java, HTML/CSS, JavaScript, TypeScript, SQL} \\
+        \textbf{Tools}{: Microsoft Office} \\
+        \textbf{Image Processing Libraries}{: OpenCV, NumPy} \\
+        \textbf{Developer Tools}{: VS Code, Intellij, Google Cloud Platform, Amazon Web Services} \\
+        \textbf{DevOps tools}{: Docker, CI/CD, GitHub, GitLab, BitBucket} \\
+        \textbf{Operating Systems}{: Mac, Windows} \\
+        \textbf{Technologies/Frameworks}{: React, Spring-boot, Node.js, JUnit} \\
+        \textbf{Soft Skills}{: Time Management, Leadership, Adaptability and Flexibility, Decision Making} \\
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+\section{Certifications}
+\resumeItemListStart
+\resumeItem{Essentials for NX Designers from Siemens}
+\resumeItem{Introduction to Industry 4.0 and Industrial Internet of things from NPTEL}
+\resumeItemListEnd
+\vspace{-16pt}
+
+
+\section{Language Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Mother Tongue}{: Telugu} \\
+        \textbf{Other Languages}{: English - B2, German - A1} \\
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+\resumeSubHeadingListStart
+\resumeSubheading{Training and Placements Cell }{April 2021}{Coordinator}{JNTUA College of Engineering, Pulivendula}
+\resumeItemListStart
+\resumeItem{Organized placements activities throughout 2021.}
+\resumeItem{Managed the placement data for 60 students.}
+\resumeItemListEnd
+
+\resumeSubheading{Robogyan Club Events}{August 2020}{Event Coordinator}{JNTUA College of Engineering, Pulivendula}
+\resumeItemListStart
+\resumeItem{Organized a workshop on Image processing using Raspberry Pi.}
+\resumeItem{Hosted and managed a two-day event for 50 delegates.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\end{document}

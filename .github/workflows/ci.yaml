@@ -1,0 +1,43 @@
+name: LaTeX CI
+
+on:
+  push:
+    branches:
+      - master # or any other branch you want to build on push
+      - software
+  pull_request:
+    branches:
+      - master # or any other branch you want to build on pull request
+      - software
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install necessary LaTeX packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-xetex \
+            latexmk \
+            texlive-font-utils
+
+      - name: Compile Resume with pdflatex
+        run: |
+          mkdir -p output
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output muni_venkatesh_resume.tex  # Replace with your resume LaTeX file
+
+      - name: Upload resume
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: ./output/main.pdf
