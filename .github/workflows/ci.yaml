@@ -34,7 +34,7 @@ jobs:
       - name: Compile Resume with pdflatex
         run: |
           mkdir -p output
-          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output muni_venkatesh_resume.tex  # Replace with your resume LaTeX file
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output main.tex  # Replace with your resume LaTeX file
 
       - name: Upload resume
         uses: actions/upload-artifact@v3
