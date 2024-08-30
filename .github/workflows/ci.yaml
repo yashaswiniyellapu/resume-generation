@@ -3,12 +3,11 @@ name: LaTeX CI
 on:
   push:
     branches:
-      - master # or any other branch you want to build on push
-      - software
+      # - master # or any other branch you want to build on push
+      - '*'  # matches every branch that doesn't contain a '/'
   pull_request:
     branches:
       - master # or any other branch you want to build on pull request
-      - software
 
 jobs:
   build:
