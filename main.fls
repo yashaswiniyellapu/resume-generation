@@ -161,15 +161,13 @@ INPUT ./main.out
 OUTPUT main.out
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome5/fa5free2solid.tfm
-INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1solid.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -198,6 +196,10 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1solid.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd
@@ -218,8 +220,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
