@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726831212.43278 "d:/resumes/Resume code/resume/main.tex" "main.pdf" "main" 1726831214.3826 0
+["pdflatex"] 1726834310.86092 "d:/resumes/Resume code/resume/main.tex" "main.pdf" "main" 1726834312.13787 0
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1723906624 2920 d63721872b8c77041b88e51b8f7c291d ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1723906624 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1723906624 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -124,10 +124,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1723930894 5543950 2aa73a438b7054b2327b796fbe5f4275 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1723931061 8239326 d688cd7c5e0aba37782915f95cf77354 ""
   "c:/texlive/2024/texmf.cnf" 1723930871 713 e69b156964470283e0530f5060668171 ""
-  "d:/resumes/Resume code/resume/main.tex" 1726831211 12067 e65a423561bda9eb1420242d43416da3 ""
-  "main.aux" 1726831214 1237 a1baebbdde81234bdfa364fe3849781e "pdflatex"
-  "main.out" 1726831214 1015 7769bd96db773b7bc473f6dd6fdc340e "pdflatex"
-  "main.tex" 1726831211 12067 e65a423561bda9eb1420242d43416da3 ""
+  "d:/resumes/Resume code/resume/main.tex" 1726834294 12070 e1878eb0ed0a7f9aad69d34a82225dda ""
+  "main.aux" 1726834311 1237 a1baebbdde81234bdfa364fe3849781e "pdflatex"
+  "main.out" 1726834311 1015 7769bd96db773b7bc473f6dd6fdc340e "pdflatex"
+  "main.tex" 1726834294 12070 e1878eb0ed0a7f9aad69d34a82225dda ""
   (generated)
   "main.aux"
   "main.log"
