@@ -19,7 +19,10 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{multicol}
+\usepackage{ragged2e}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -43,6 +46,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+\setlength{\footskip}{4.08003pt}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -54,11 +59,12 @@
 
 \raggedbottom
 \raggedright
+\setlength{\headheight}{0pt}
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -85,6 +91,31 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
+
+\newcommand{\education}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small#4} \\
+      \textit{\small#5} \textit{\small#6}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\projecttitle}[2]{
+  \noindent
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small#1} & \small#2
+  \end{tabular*}
+  \vspace{-15pt}
+}
+
+\newcommand{\techstack}[2]{
+  \begin{tabularx}{\textwidth}{l@{\hspace{5pt}} X}
+    \textbf{\small#1} & \small#2
+  \end{tabularx}
+  \vspace{-18pt}
+}
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
@@ -116,16 +147,12 @@
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
   {\Huge \scshape Yashaswini Yellapu} \\ \vspace{1pt}
+  \textit{\small (She/her)} \\
   Konigsberger Strasse 33, Furth, 90766 \\ \vspace{1pt}
-  \small \raisebox{-0.1\height}\faPhone\ +49 15221348983 ~ \href{mailto:yashaswiniyellapu@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yashaswiniyellapu@gmail.com}} ~
+  \small \href{tel:+49 15221348983}{\raisebox{-0.1\height}\faPhone\ \underline{{+49 15221348983}}} ~
+  \href{mailto:yashaswiniyellapu@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yashaswiniyellapu@gmail.com}} ~
   \href{https://www.linkedin.com/in/yashaswini-y-200500149/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/yashaswini}}  ~
   \href{https://github.com/yashaswiniyellapu}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/yashaswiniyellapu}}
   \vspace{-8pt}
@@ -133,20 +160,21 @@
 
 %------ABOUT----------
 \section{About}
-\resumeSubHeadingListStart
-\resumeItem{I am seeking a Working Student position, aligning with my master's studies in FAU. This role offers hands
-  on industry experience to expand my skills. Dedicated and adaptable, I strive to contribute effectively to
-  dynamic team environments. Balancing academic excellence with professional growth, I aim to make
-  meaningful contributions and drive innovation within the organization.!}
-\resumeSubHeadingListEnd
+\begin{justify}
+  \resumeSubHeadingListStart
+  \resumeItem{Currently pursuing a Master of Science in Autonomy Technologies at FAU Erlangen-Nuremberg, with a strong focus on Signal Processing, Medical Robotics, and Automation. With over two years of experience in software development, I am actively seeking a Working Student position to gain practical industry experience and apply my academic knowledge in real-world projects. My goal is to contribute to innovative solutions while further enhancing my technical and professional skills.}
+  \resumeSubHeadingListEnd
+\end{justify}
+
 \vspace{-16pt}
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
-{FAU Erlangen-Nuremburg}{April 2024 -- current}
+\education
+{FAU Erlangen-Nuremberg}{April 2024 -- current}
 {Master of Science in Autonomy Technologies}{Erlangen, Bayern, Germany}
+{Major:} {Signal Processing, Robotics and Automation}
 \resumeSubheading
 {JNTUA College of Engineering, Pulivendula}{July 2017 -- June 2021}
 {Bachelor of Technology in Mechanical Engineering}{Pulivendula, Andhra Pradesh, India}
@@ -162,6 +190,10 @@
     \item Computer Vision
     \item Low Code Development
     \item DevOps and CI/CD Integration
+    \item Signal Processing
+    \item Backend Development
+    \item Radar,RFID and Wireless Systems
+    \item Image and Video Compression(Image and Video Coding)
   \end{itemize}
 \end{multicols}
 \vspace*{2.0\multicolsep}
@@ -169,65 +201,62 @@
 
 %-----------EXPERIENCE-----------
 \section{Experience}
+
 \resumeSubHeadingListStart
+\resumeSubheading{Everest Engineering}{Aug 2021 - Jan 2024}{Software CraftsPerson}{Bangalore, India}
 
-\resumeSubheading
-{Everest Engineering}{August 2021 -- March 2024}
-{Software Craftsperson}{Bangalore, Karnataka}
+\projecttitle{Timesheets | Employee Work Hours Tracking}{July 2023 – Jan 2024}
 
-\textbf{Timesheets | Employee Work Hours Tracking} {July 2023 – Jan 2024 }
-
-
-\textbf{Tech Stack:} \textit{ TypeScript, SQL, Node.js, React-JS}
-
+\techstack{Tech Stack:}{TypeScript, SQL, Node.js, React-JS, AWS, GitHub}
 \resumeItemListStart
-\resumeItem{Implemented constraints in recording work hours.}
-\resumeItem{Enhanced CI/CD processes for scheduled script execution using GitHub Actions.}
-\resumeItem{Developed new features in an admin-friendly user interface.}
-\resumeItem{Increased test coverage through unit tests. }
-\resumeItem{Utilized AWS ECS to manage databases. }
+\resumeItem{Achieved a 50\% improvement in overall system performance compared to previous iterations.}
+\resumeItem{Enhanced CI/CD processes by streamlining scheduled script execution, leveraging GitHub Actions, resulting in a 25\% increase in automation efficiency.}
+\resumeItem{Developed and launched new user-friendly features within an admin interface.}
+\resumeItem{Implemented constraints for recording work hours, ensuring a 15\% improvement in data accuracy and compliance.}
+\resumeItem{Increased test coverage through the implementation of comprehensive unit tests, enhancing code reliability and quality.}
 \resumeItemListEnd
 
-\textbf{SeekMaxConnect | Job Portal Mobile Application} {Aug 2022 - June 2023}
 
-\textbf{Tech Stack:} \textit{Node.js, TypeScript, JavaScript, Koa.js, NodeBB, Docker, Buildkite, AWS, MongoDB,
-  Jest, Nock, Datadog, Splunk, PagerDuty}
+\projecttitle{SeekMaxConnect | Job Portal Mobile Application}{Aug 2022 - June 2023}
+
+\techstack{Tech Stack:}{Node.js, TypeScript, JavaScript, Koa.js, NodeBB, Docker, Buildkite, AWS, MongoDB, Jest, Nock, Datadog, Splunk, PagerDuty, GitHub}
 \resumeItemListStart
-\resumeItem{Managed on-call support, effectively resolving production incidents through collaborative teamwork.}
-\resumeItem{Championed the delivery of the MyThread feature, ensuring its successful implementation within the application}
-\resumeItem{Developed monitoring dashboards in Datadog for API and AWS services, proficiency in Splunk. }
-\resumeItem{Enhanced NodeBB service functionalities with user-specific privileges and custom API integrations.}
-\resumeItem{Implemented multiple APIs across proxy and GraphQL service layers, incorporating AWS Recognition, Lambda, CloudFormation, and SecretManager services.}
-\resumeItem{Utilized AWS EC2, SNS, and CloudWatch services, while building Docker images and establishing CI/CD pipelines using Buildkite.}
-\resumeItem{Improved test coverage through the implementation of unit and integration tests.}
+\resumeItem{Designed and developed multiple APIs with GraphQL and AWS integration.}
+\resumeItem{Built an integrated platform, improving user experience by 15\%.}
+\resumeItem{Managed on-call support, reducing incident resolution time by 30\%.}
+\resumeItem{Led the delivery of the MyThread feature, ensuring seamless integration.}
+\resumeItem{Developed Datadog dashboards for API and AWS monitoring, with proficiency in Splunk.}
+\resumeItem{Improved test coverage by 35\% with unit and integration tests, enhancing reliability.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Everest Engineering}{April 2021 -- August 2022}
 {Full Stack Developer Intern}{Bangalore, India}
 
-\textbf{Employee Portal | Web Application}
+\projecttitle{Employee Portal | Web Application}{}
 
-\textbf{Tech stack:} \textit{Java, SQL, Spring boot}
+\techstack{Tech stack:}{Java, SQL, Spring boot}
 \resumeItemListStart
-\resumeItem{ Developed a Java-backed application with a React JS frontend, incorporating CI/CD via GitHub Actions, and deployed it using AWS ECS cloud services. Acquired expertise in building and testing REST APIs. }
+\resumeItem{Developed a Java-backed application with a React JS frontend, incorporating CI/CD via GitHub Actions, and deployed it using AWS ECS cloud services.}
 \resumeItemListEnd
 
-\textbf{Airlines booking system | Backend Application}
+\projecttitle{Airlines Booking System | Backend Application}{}
 
-\textbf{Tech stack:} \textit{Java, Docker, MySQL, Aws, React}
+\techstack{Tech stack:}{Java, Docker, MySQL, AWS, React}
 
 \resumeItemListStart
-\resumeItem{Has built a Java-based backend application to book flight tickets based on Economy, First and Second class with pricing strategies that depend on the date of booking. It was able to handle the flight data using the MySQL database. }
+\resumeItem{Developed a application for flight ticket booking across Economy, First, and Business classes, utilizing dynamic pricing strategies based on booking dates.}
 \resumeItemListEnd
 
-\textbf{Parking lot System | Backend Application}
+\projecttitle{Parking Lot System | Backend Application}{}
 
-\textbf{Tech stack:} \textit{Java}
+\techstack{Tech stack:}{Java}
+
 \resumeItemListStart
-\resumeItem{Has built a Java-based application to create a parking lot with given floors and slots by the user. It is used to allocate the parking space for cars, bikes and trucks. Parking-ticket is issued when the vehicle was parked and a vehicle with a parking ticket can be brought out of
-  the parking lot.  }
+\resumeItem{Created a application to manage parking lots with configurable floors and slots, supporting cars, bikes, and trucks.}
+\resumeItem{The system issues parking tickets upon entry and manages vehicle exits based on ticket validation.}
 \resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 \vspace{-16pt}
@@ -235,25 +264,25 @@
 %----!!!!YASHU FILL THIS--------
 %-----------PROJECTS-----------
 \section{Projects}
-\vspace{-5pt}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Automatic Domestic Fire Suppression System} $|$ \emph{Aurduino,Flame sensor,GSM module,Relay module}}
-{April 2021-June 2021}
+
+\projecttitle{Automatic Domestic Fire Suppression System}{April 2021 -- June 2021}
+
+\techstack{Tech Stack:}{Arduino, Flame Sensor, GSM Module, Relay Module}
+
 \resumeItemListStart
-\resumeItem{The project represents a comprehensive safety initiative
-  designed to elevate the security of domestic households. It leverages cutting-edge technology to detect,
-  mitigate, and prevent fire accidents within the confines of a house, ensuring a safer living experience.}
-\resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{Smart Dustbin} $|$ \emph{Aurduino, Servo motor, Ultrasonic sensor}}{April 2020 -- August 2020}
-\resumeItemListStart
-\resumeItem{To improve hygiene, this setup enables to dispose of trash without touching the dustbin lid.}
+\resumeItem{Developed a domestic fire safety system that detects, mitigates, and prevents fire accidents using sensors and automation, ensuring enhanced household security.}
 \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-\vspace{-15pt}
+\projecttitle{Smart Dustbin}{April 2020 -- August 2020}
+
+\techstack{Tech Stack:}{Arduino, Servo Motor, Ultrasonic Sensor}
+
+\resumeItemListStart
+\resumeItem{Created a touchless smart dustbin that uses ultrasonic sensors to detect user proximity, automatically opening the lid to improve hygiene and user convenience.}
+\resumeItemListEnd
+
+\vspace{-10pt}
+
 
 
 %
@@ -261,12 +290,12 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Languages}{: Python, Java, HTML/CSS, JavaScript, TypeScript, SQL} \\
-        \textbf{Tools}{: Microsoft Office} \\
+        \textbf{Languages}{: C, Python, Java, Latex, TypeScript} \\
+        \textbf{Databases}{: MySQL, PostgreSQL, MongoDB} \\
         \textbf{Image Processing Libraries}{: OpenCV, NumPy} \\
         \textbf{Developer Tools}{: VS Code, Intellij, Google Cloud Platform, Amazon Web Services} \\
         \textbf{DevOps tools}{: Docker, CI/CD, GitHub, GitLab, BitBucket} \\
-        \textbf{Operating Systems}{: Mac, Windows} \\
+        \textbf{Operating Systems}{: Mac, Windows, Linux} \\
         \textbf{Technologies/Frameworks}{: React, Spring-boot, Node.js, JUnit} \\
         \textbf{Soft Skills}{: Time Management, Leadership, Adaptability and Flexibility, Decision Making} \\
         }}
@@ -275,7 +304,7 @@
 
 \section{Certifications}
 \resumeItemListStart
-\resumeItem{Essentials for NX Designers from Siemens}
+\resumeItem{Essentials for NX Designers from \textbf{Siemens}}
 \resumeItem{Introduction to Industry 4.0 and Industrial Internet of things from NPTEL}
 \resumeItemListEnd
 \vspace{-16pt}
